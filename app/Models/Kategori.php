@@ -3,10 +3,12 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+
 use App\Models\Subkategori;
 
 class Kategori extends Model
 {
+    
     protected $table = 'kategori';
 
     protected $fillable = ['kategori'];
@@ -16,7 +18,7 @@ class Kategori extends Model
         return $this->hasMany(Subkategori::class);
     }
 
-     // Tambahkan relasi ini:
+    // Tambahkan relasi ini:
     public function barang()
     {
         return $this->hasMany(Barang::class, 'kategori_id');

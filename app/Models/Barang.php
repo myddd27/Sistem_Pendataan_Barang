@@ -25,6 +25,7 @@ class Barang extends Model
 
     public function subkategori()
     {
+        
         return $this->belongsTo(Subkategori::class);
     }
 

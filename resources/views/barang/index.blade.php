@@ -18,8 +18,8 @@
                     <th>No</th>
                     <th>Nama</th>
                     <th>Kode</th>
-                    <th>Kategori</th>
-                    <th>Subkategori</th>
+                    <th>Klasifikasi</th>
+                    <th>Subklasifikasi</th>
                     <th>Stok</th>
                     <th>Satuan</th>
                     <th class="no-sort">

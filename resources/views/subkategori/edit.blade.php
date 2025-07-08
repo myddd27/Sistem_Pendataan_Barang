@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Subkategori')
+@section('title', 'Edit Subklasifikasi')
 
 @section('content')
     <div class="card">
@@ -9,14 +9,14 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
-                    <label class="form-label">Nama Subkategori</label>
+                    <label class="form-label">Nama Subklasifikasi</label>
                     <input type="text" name="nama" class="form-control" value="{{ old('nama', $subkategori->nama) }}" required>
                     @error('nama') <small class="text-danger">{{ $message }}</small> @enderror
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Kategori Induk</label>
+                    <label class="form-label">Klasifikasi Induk</label>
                     <select name="kategori_id" class="form-select" required>
-                        <option value="">-- Pilih Kategori --</option>
+                        <option value="">-- Pilih Klasifikasi --</option>
                         @foreach($kategori as $k)
                             <option value="{{ $k->id }}" {{ old('kategori_id', $subkategori->kategori_id) == $k->id ? 'selected' : '' }}>
                                 {{ $k->kategori }}

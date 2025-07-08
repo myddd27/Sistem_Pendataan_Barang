@@ -22,6 +22,7 @@
                     <tr>
                         <th>No</th>
                         <th>Tanggal</th>
+                        <th>Kode Barang</th>
                         <th>Barang</th>
                         <th>Jenis</th>
                         <th>Jumlah</th>
@@ -33,6 +34,7 @@
                         <tr>
                             <td>{{ $i + 1 }}</td>
                             <td>{{ $r->tanggal }}</td>
+                            <td>{{ $r->barang->kode ?? '-' }}</td>
                             <td>{{ $r->barang->nama ?? '-' }}</td>
                             <td>
                                 <span class="badge bg-{{ $r->jenis == 'Masuk' ? 'success' : 'danger' }}">
