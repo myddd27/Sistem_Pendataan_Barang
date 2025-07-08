@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
-use App\Http\Controllers\SubkategoriController;
+use App\Http\Controllers\SubKategoriController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\LaporanController;
 
