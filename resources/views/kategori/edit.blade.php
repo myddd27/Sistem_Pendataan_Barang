@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Klasifikasi')
+@section('title', 'Edit Kategori')
 
 @section('content')
     <div class="card">
@@ -9,7 +9,7 @@
                 @csrf
                 @method('PUT')
                 <div class="mb-3">
-                    <label for="kategori" class="form-label">Nama Klasifikasi</label>
+                    <label for="kategori" class="form-label">Nama Kategori</label>
                     <input type="text" name="kategori" id="kategori" class="form-control"
                         value="{{ old('kategori', $kategori->kategori ?? '') }}" required>
                     @error('kategori')

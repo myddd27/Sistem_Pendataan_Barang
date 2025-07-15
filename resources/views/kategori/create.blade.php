@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tambah Klasifikasi')
+@section('title', 'Tambah Kategori')
 
 @section('content')
     <div class="card">
@@ -8,7 +8,7 @@
             <form action="{{ route('kategori.store') }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="kategori" class="form-label">Nama Klasifikasi</label>
+                    <label for="kategori" class="form-label">Nama Kategori</label>
                     <input type="text" name="kategori" id="kategori" class="form-control"
                         value="{{ old('kategori', $kategori->kategori ?? '') }}" required>
                     @error('kategori')

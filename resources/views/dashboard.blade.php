@@ -94,7 +94,7 @@
 
         {{-- Riwayat --}}
         <div class="card mt-5 shadow-sm">
-            <div class="card-header fw-bold"><i class="bi bi-clock-history me-2"></i> Riwayat Barang Terbaru</div>
+            <div class="card-header fw-bold"><i class="bi bi-clock-history me-2"></i> Riwayat Transksi Barang Terbaru</div>
             <div class="card-body table-responsive">
                 <table class="table table-hover align-middle">
                     <thead class="table-light">

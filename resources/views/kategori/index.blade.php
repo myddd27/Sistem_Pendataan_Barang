@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Data Klasifikasi')
+@section('title', 'Data Kategori')
 
 @section('content')
     <a href="{{ route('kategori.create') }}" class="btn btn-primary mb-3">
-        <i class="bi bi-plus-circle"></i> Tambah Klasifikasi
+        <i class="bi bi-plus-circle"></i> Tambah Kategori
     </a>
 
     @if(session('success'))
@@ -16,7 +16,7 @@
             <thead class="table-dark">
                 <tr>
                     <th>No</th>
-                    <th>Nama Klasifikasi</th>
+                    <th>Nama Kategori</th>
                     <th class="text-center" style="width: 20%">Aksi</th>
                 </tr>
             </thead>

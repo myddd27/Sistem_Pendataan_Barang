@@ -66,7 +66,7 @@
                             data-bs-toggle="collapse" href="#menuKategori" role="button"
                             aria-expanded="{{ request()->routeIs('kategori.*') || request()->routeIs('subkategori.*') ? 'true' : 'false' }}"
                             aria-controls="menuKategori">
-                            <span><i class="bi bi-tags me-2"></i> Data Klasifikasi</span>
+                            <span><i class="bi bi-tags me-2"></i>Data Kategori</span>
                             <i class="bi bi-caret-down-fill small"></i>
                         </a>
                         <div class="collapse {{ request()->routeIs('kategori.*') || request()->routeIs('subkategori.*') ? 'show' : '' }}"
@@ -75,13 +75,13 @@
                                 <li class="nav-item">
                                     <a href="{{ route('kategori.index') }}"
                                         class="nav-link text-white {{ request()->routeIs('kategori.*') ? 'active' : '' }}">
-                                        <i class="bi bi-dot me-2"></i> Klasifikasi
+                                        <i class="bi bi-dot me-2"></i> Kategori
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="{{ route('subkategori.index') }}"
                                         class="nav-link text-white {{ request()->routeIs('subkategori.*') ? 'active' : '' }}">
-                                        <i class="bi bi-dot me-2"></i> Subklasifikasi
+                                        <i class="bi bi-dot me-2"></i> Subkategori
                                     </a>
                                 </li>
                             </ul>
